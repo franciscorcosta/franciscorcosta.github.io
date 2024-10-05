@@ -1,68 +1,115 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  header{
-    background-color: green;
-    color: whitesmoke;
-    text-align: center;
-    padding: 20px;
-  }
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  color: #0d10c0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+ 
+}
 
-  nav {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-  }
+h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: #0d10c0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
 
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-  }
+section {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  nav li {
-    margin-right: 20px;
-  }
 
-  nav a {
-    color: white;
-    text-decoration: none;
-  }
 
-  main {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
 
-  main h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-  main p {
-    margin-bottom: 20px;
-  }
 
-  main img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
 
-  footer {
-    background-color: green;
-    color: whitesmoke;
-    padding: 10px;
-    text-align: center;
-    clear: both;
-  }
+#fotografias h3, #video h3, #poema h3 {
+  color: #0339ad;
+  font-size: 24px;
+  border-bottom: 2px solid #0339ad;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.centered-image {
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+
+
+
+
+body {
+  background-color: #ffee00;
+ 
+}
+
+nav {
+  background-color: #0d10c0;
+  color: #FFFFFF;
+}
+
+nav ul {
+  list-style: none;
+ 
+  margin: 0;
+ 
+  padding: 0;
+  
+}
+
+nav li {
+  display: inline-block;
+  
+  margin-right: 20px;
+ 
+}
+
+nav a {
+  color: #ffee00;
+  
+  text-decoration: none;
+  
+  padding: 20px;
+ 
+  display: inline-block;
+
+  transition: transform 0.2s;
+  
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #ffffff;
+  
+}
+
+main {
+  padding: 20px;
+
+}
