@@ -61,6 +61,10 @@ section {
 
 
 
+
+
+
+
 body {
   background-color: #ffee00;
  
@@ -114,3 +118,15 @@ main {
 
 }
 
+label {
+  font-size: medium;
+}
+
+input {
+  font-size: medium;
+}
+
+label, input {
+  display: block;
+  margin-bottom: 10px;
+}
