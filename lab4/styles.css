@@ -4,16 +4,35 @@
   box-sizing: border-box;
 }
 
+
+p::first-letter {
+  font-size: 2em;
+  color: #000000;
+}
+
+
+h1::after {
+  content: "😎";
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+
 h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 36px;
   color: #0d10c0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   text-align: center;
- 
+
 }
 
-h2{
+
+
+
+h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
   color: #0d10c0;
@@ -43,7 +62,9 @@ section {
 
 
 
-#fotografias h3, #video h3, #poema h3 {
+#fotografias h3,
+#video h3,
+#poema h3 {
   color: #0339ad;
   font-size: 24px;
   border-bottom: 2px solid #0339ad;
@@ -52,9 +73,9 @@ section {
 }
 
 .centered-image {
-  display: block; 
-  margin-left: auto; 
-  margin-right: auto; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -67,7 +88,7 @@ section {
 
 body {
   background-color: #ffee00;
- 
+
 }
 
 nav {
@@ -77,31 +98,31 @@ nav {
 
 nav ul {
   list-style: none;
- 
+
   margin: 0;
- 
+
   padding: 0;
-  
+
 }
 
 nav li {
   display: inline-block;
-  
+
   margin-right: 20px;
- 
+
 }
 
 nav a {
   color: #ffee00;
-  
+
   text-decoration: none;
-  
+
   padding: 20px;
- 
+
   display: inline-block;
 
   transition: transform 0.2s;
-  
+
 }
 
 a:hover {
@@ -110,7 +131,7 @@ a:hover {
 
 footer {
   background-color: #ffffff;
-  
+
 }
 
 main {
@@ -126,7 +147,8 @@ input {
   font-size: medium;
 }
 
-label, input {
+label,
+input {
   display: block;
   margin-bottom: 10px;
 }
