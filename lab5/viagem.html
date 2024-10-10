@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estocolmo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <h1>Estocolmo</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="local.html">Localização</a>
+            <a href="multimedia.html">Multimédia</a>
+            <a href="info.html">Informação</a>
+            <a href="quizz.html">Quizz</a>
+            <a href="viagem.html">Viagem</a>
+        </nav>
+
+
+        <img class="centered-image" src="images/istockphoto-178804395-612x612.jpg" alt="Vista de Estocolmo">
+       
+
+
+
+
+        <h2>Viagem</h2>
+        <fieldset>
+            <legend><b>Formulário de Planeamento da Viagem</legend></b>
+            <p></p>
+            <form action="form.html" method="get">
+                <input type="text" placeholder="Insira o nome" name="nome" required>
+                <br><br>
+
+                <input type="text" placeholder="Insira o apelido" name="apelido">
+                <br><br>
+
+                <input type="text" placeholder="Insira o email" name="email" required>
+                <br><br>
+
+                <label for="data_partida">Data de partida:</label>
+                <input type="date" id="data_partida" name="data_partida" required><br><br>
+
+                <label for="data_regresso">Data de regresso:</label>
+                <input type="date" id="data_regresso" name="data_regresso"><br><br>
+
+                <label for="num_passageiros">Número de passageiros:</label>
+                <input type="number" id="num_passageiros" name="num_passageiros" min="1"><br><br>
+
+                <label for="meio_transporte">Meio de transporte favorito:</label>
+                <select id="meio_transporte" name="meio_transporte" required>
+                    <option value="carro">Carro</option>
+                    <option value="comboio">Comboio</option>
+                    <option value="aviao">Avião</option>
+                    <option value="outro">Outro</option>
+                </select><br><br>
+
+                <label>Qual o serviço que deseja na sua viagem:</label>
+                <input type="radio" id="basico" name="servico" value="basico">
+                <label for="basico">Básico</label>
+                <input type="radio" id="premium" name="servico" value="premium">
+                <label for="premium">Premium</label><br><br>
+
+                <label for="pedidos_especiais">Pedidos especiais:</label><br>
+                <textarea id="pedidos_especiais" name="pedidos_especiais" rows="4" cols="50"
+                    placeholder="Se houver, indique os seus pedidos especiais"></textarea><br><br>
+
+                <label for="valor_gasto">Valor que espera gastar por pessoa:</label>
+                <input type="number" id="valor_gasto" name="valor_gasto" min="0">
+                <select id="moeda_gasto" name="moeda_gasto">
+                    <option value="USD">Dólares (USD)</option>
+                    <option value="EUR">Euros (EUR)</option>
+                </select><br><br>
+
+                <label for="valor_gasto">Valor que espera gastar por dia:</label>
+                <input type="number" id="valor_gasto" name="valor_gasto" min="0">
+                <select id="moeda_gasto" name="moeda_gasto">
+                    <option value="EUR">Euros (EUR)</option>
+                    <option value="USD">Dólares (USD)</option>
+                </select>
+                </select><br><br>
+
+
+
+
+
+                <input type="reset" value="Reset">
+                <input type="submit" value="Enviar">
+            </form>
+        </fieldset>
+    </main>
+
+</body>
+
+</html>
