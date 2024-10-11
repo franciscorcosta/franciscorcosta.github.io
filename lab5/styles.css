@@ -5,11 +5,6 @@
 }
 
 
-p::first-letter {
-  font-size: 2em;
-  color: #000000;
-}
-
 
 h1::after {
   content: "😎";
@@ -211,7 +206,12 @@ tr:nth-child(2n) {
 }
 
 
-h3{
+ h1{
+  text-transform: uppercase;
+}
+
+h3.subtitulo {
+
   border: 2px solid #0339ad;
   border-radius: 10px;
   /* Define as linhas ao redor da seção */
@@ -222,13 +222,6 @@ h3{
   background-color: #f0f0f0
     /* Cor de fundo */
 }
-
-
-
-#titulo{
-  text-transform: uppercase;
-}
-
 
 
 
