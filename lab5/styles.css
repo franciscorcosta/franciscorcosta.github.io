@@ -83,7 +83,6 @@ section {
 
 
 
-
 #interesse {
   border: 2px solid #0339ad;
   /* Define as linhas ao redor da seção */
@@ -144,6 +143,7 @@ section {
   background-color: #f0f0f0
     /* Cor de fundo */
 
+
 }
 
 
@@ -163,17 +163,25 @@ section {
 }
 
 
-#iframefoto {
 
+
+img {
+  width: 460px; /* Largura da imagem */
+  height: auto;
+  top: auto; /* A altura será ajustada automaticamente para manter a proporção */
+}
+
+#iframefoto {
   border: 2px solid #0339ad;
   border-radius: 20px;
   margin: 50px 50px;
-  width: 75%;
-  /* Largura total do iframe */
-  height: 270px;
-  /* Altura do iframe */
+  width: 65%; /* Largura total do iframe */
+  height: 270px; /* Altura do iframe */
+  display: flex;
+  justify-content: center;
+  align-items: auto;
+  overflow: hidden; /* Para garantir que a imagem fique dentro do contêiner */
 }
-
 
 #melhoralturaparavisitar2 {
 
@@ -211,16 +219,13 @@ tr:nth-child(2n) {
 }
 
 h3.subtitulo {
-
   border: 2px solid #0339ad;
   border-radius: 10px;
-  /* Define as linhas ao redor da seção */
   padding: 20px 10px;
-  /* Espaço interno da seção */
   margin: 50px 0px 50px 0px;
-  /* Espaço externo da seção: cria distância do cabeçalho */
-  background-color: #f0f0f0
-    /* Cor de fundo */
+  background-color: #f0f0f0;
+  position: relative; /* ou 'absolute' dependendo da necessidade */
+  top: -50px; /* Ajusta o valor para mover o elemento para cima */
 }
 
 
