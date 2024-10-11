@@ -106,7 +106,7 @@ section {
 #interesse2 {
   border: 2px solid #0339ad;
   /* Define as linhas ao redor da seção */
-  border-radius: 20px;
+  border-radius: 10px;
   /* Define as linhas ao redor da seção */
   padding: 20px 10px;
   /* Espaço interno da seção */
@@ -211,7 +211,17 @@ tr:nth-child(2n) {
 }
 
 
-
+h3{
+  border: 2px solid #0339ad;
+  border-radius: 10px;
+  /* Define as linhas ao redor da seção */
+  padding: 20px 10px;
+  /* Espaço interno da seção */
+  margin: 50px 0px 50px 0px;
+  /* Espaço externo da seção: cria distância do cabeçalho */
+  background-color: #f0f0f0
+    /* Cor de fundo */
+}
 
 
 
@@ -241,7 +251,7 @@ ol {
 nav {
   background-color: #0d10c0;
   color: #FFFFFF;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
