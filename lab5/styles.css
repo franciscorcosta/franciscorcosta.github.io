@@ -349,10 +349,16 @@ input {
 }
 
 
-
-.image-link {
+.zoomable {
   cursor: zoom-in;
-  /* Define o cursor como zoom-in ao passar o mouse sobre o link da imagem */
+  transition: transform 0.2s ease;
+  width: 120px;
+  height: 80px; /* A largura desejada */
+  height: auto; /* Mantém a proporção */
+}
+
+.zoomable:hover {
+  transform: scale(1.05);
 }
 
 
