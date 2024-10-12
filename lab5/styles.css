@@ -354,7 +354,7 @@ input {
   transition: transform 0.2s ease;
   width: 120px;
   height: 80px; /* A largura desejada */
-  height: auto; /* Mantém a proporção */
+ 
 }
 
 .zoomable:hover {
