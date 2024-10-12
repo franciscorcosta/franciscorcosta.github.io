@@ -157,12 +157,15 @@ div {
 .container {
     position: relative; /* Define um contexto de posicionamento para o elemento filho */
     width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 1200px; /* Limite a largura máxima */
     overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse o contêiner */
 }
 
 .imagem {
-    width: 100vw; /* A imagem ocupa toda a largura da viewport */
-    height: 50vh;  /* Garante que a imagem mantenha a proporção */
+    width: 100%; /* A imagem ocupa toda a largura do contêiner */
+    height: auto; /* Altura automática para manter a proporção */
+    max-height: 50vh; /* Altura máxima para limitar o tamanho */
+    object-fit: cover; /* Ajusta a imagem para preencher o contêiner */
 }
 
 .autorfoto {
