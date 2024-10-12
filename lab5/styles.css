@@ -6,6 +6,8 @@
 
 
 
+
+
 h1::after {
   content: "😎";
   color: rgb(0, 0, 0);
@@ -16,7 +18,7 @@ h1::after {
 
 
 h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Qwitcher Grypen', cursive;
   font-size: 36px;
   color: #0d10c0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -166,21 +168,26 @@ section {
 
 
 img {
-  width: 460px; /* Largura da imagem */
+  width: 460px;
+  /* Largura da imagem */
   height: auto;
-  top: auto; /* A altura será ajustada automaticamente para manter a proporção */
+  top: auto;
+  /* A altura será ajustada automaticamente para manter a proporção */
 }
 
 #iframefoto {
   border: 2px solid #0339ad;
   border-radius: 20px;
   margin: 50px 50px;
-  width: 65%; /* Largura total do iframe */
-  height: 270px; /* Altura do iframe */
+  width: 65%;
+  /* Largura total do iframe */
+  height: 270px;
+  /* Altura do iframe */
   display: flex;
   justify-content: center;
   align-items: auto;
-  overflow: hidden; /* Para garantir que a imagem fique dentro do contêiner */
+  overflow: hidden;
+  /* Para garantir que a imagem fique dentro do contêiner */
 }
 
 #melhoralturaparavisitar2 {
@@ -196,11 +203,13 @@ img {
 
 #meses {
   color: #000000;
-  text-align: left; /* Alinhamento à esquerda */
+  text-align: left;
+  /* Alinhamento à esquerda */
   font-size: 24px;
   border-bottom: 2px solid #0339ad;
   padding-bottom: 10px;
-  margin: 10px 0; /* Margem em cima e embaixo */
+  margin: 10px 0;
+  /* Margem em cima e embaixo */
 }
 
 
@@ -209,12 +218,13 @@ img {
 
 
 tr:nth-child(2n) {
-  background-color: #2418c0; /* Azul claro */
+  background-color: #2418c0;
+  /* Azul claro */
   color: white;
 }
 
 
- h1{
+h1 {
   text-transform: uppercase;
 }
 
@@ -224,8 +234,10 @@ h3.subtitulo {
   padding: 20px 10px;
   margin: 50px 0px 50px 0px;
   background-color: #f0f0f0;
-  position: relative; /* ou 'absolute' dependendo da necessidade */
-  top: -50px; /* Ajusta o valor para mover o elemento para cima */
+  position: relative;
+  /* ou 'absolute' dependendo da necessidade */
+  top: -50px;
+  /* Ajusta o valor para mover o elemento para cima */
 }
 
 
@@ -255,19 +267,26 @@ nav {
   color: #FFFFFF;
   border-radius: 10px;
   overflow: hidden;
-  width: 100%; /* Torna o nav ocupar toda a largura da página */
-  padding: 10px 0; /* Espaçamento vertical dentro do nav */
-  display: flex; /* Usa flexbox para facilitar o espaçamento dos itens */
-  justify-content: center; /* Centraliza os itens horizontalmente */
+  width: 100%;
+  /* Torna o nav ocupar toda a largura da página */
+  padding: 10px 0;
+  /* Espaçamento vertical dentro do nav */
+  display: flex;
+  /* Usa flexbox para facilitar o espaçamento dos itens */
+  justify-content: center;
+  /* Centraliza os itens horizontalmente */
 }
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Usa flexbox para alinhar os itens */
-  justify-content: space-around; /* Distribui espaço entre os itens */
-  width: 80%; /* Controla o espaço que os links ocupam */
+  display: flex;
+  /* Usa flexbox para alinhar os itens */
+  justify-content: space-around;
+  /* Distribui espaço entre os itens */
+  width: 80%;
+  /* Controla o espaço que os links ocupam */
 }
 
 nav li {
@@ -327,4 +346,17 @@ label,
 input {
   display: block;
   margin-bottom: 10px;
+}
+
+
+
+.image-link {
+  cursor: zoom-in;
+  /* Define o cursor como zoom-in ao passar o mouse sobre o link da imagem */
+}
+
+
+p {
+  font-family: "Times New Roman", times, serif;
+
 }
