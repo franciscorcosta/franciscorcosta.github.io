@@ -75,8 +75,10 @@ nav a:last-child {
     width: 100vw;
     height: 50vh;
     /* Aumentar a altura para 100vh para ocupar toda a página */
-    background-color: #003296; /* Cor de fundo */
-    margin: 0; /* Remover margens externas */
+    background-color: #003296;
+    /* Cor de fundo */
+    margin: 0;
+    /* Remover margens externas */
     padding-bottom: 20px;
 }
 
@@ -88,8 +90,10 @@ nav a:last-child {
     width: 100vw;
     height: 50vh;
     /* Aumentar a altura para 100vh para ocupar toda a página */
-    background-color: #003296; /* Cor de fundo */
-    margin: 0; /* Remover margens externas */
+    background-color: #003296;
+    /* Cor de fundo */
+    margin: 0;
+    /* Remover margens externas */
     padding-bottom: 20px;
 }
 
@@ -98,7 +102,7 @@ nav a:last-child {
 
 
 
-#capitais{
+#capitais {
 
     display: flex;
     flex-direction: column;
@@ -107,17 +111,17 @@ nav a:last-child {
     width: 100vw;
     height: 100vh;
     /* Aumentar a altura para 100vh para ocupar toda a página */
-    background-color: #003296; /* Cor de fundo */
-    margin: 0; /* Remover margens externas */
+    background-color: #003296;
+    /* Cor de fundo */
+    margin: 0;
+    /* Remover margens externas */
     padding-bottom: 20px;
 
 }
 
 
 
-#países{
-
-}
+#países {}
 
 
 
@@ -130,7 +134,8 @@ div {
 
 .poema {
     font-size: 1rem;
-    margin: 0 20px; /* Margens laterais */
+    margin: 0 20px;
+    /* Margens laterais */
     text-align: center;
     color: white;
 }
@@ -143,8 +148,10 @@ div {
 }
 
 .imagem {
-    width: 100%; /* A imagem ocupa toda a largura do contêiner */
-    height: auto;  /* Garante que a imagem não exceda a largura do seu contêiner pai */
+    width: 100%;
+    /* A imagem ocupa toda a largura do contêiner */
+    height: auto;
+    /* Garante que a imagem não exceda a largura do seu contêiner pai */
 }
 
 .autorfoto {
@@ -156,16 +163,17 @@ div {
     padding: 5px;
 }
 
-.container{
-    position: relative; /* Define um contexto de posicionamento para o elemento filho */
-    width: 600px; /* Defina a largura do contêiner conforme necessário */
-    height: 300px; /* Defina a altura do contêiner conforme necessário */
-    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse o contêiner */
+.container {
+    position: relative;
+    /* Define um contexto de posicionamento para o elemento filho */
+    width: 100%;
+    /* A largura do contêiner agora ocupa 100% da largura do navegador */
+    height: 300px;
+    /* Defina a altura do contêiner conforme necessário */
+    overflow: hidden;
+    /* Esconde qualquer conteúdo que ultrapasse o contêiner */
+    max-width: 600px;
+    /* Se necessário, defina uma largura máxima para evitar que fique muito grande em telas grandes */
+    margin: 0 auto;
+    /* Centraliza o contêiner horizontalmente */
 }
-
-
-
-
-
-
-
