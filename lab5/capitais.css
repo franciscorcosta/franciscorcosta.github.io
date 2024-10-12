@@ -168,8 +168,8 @@ div {
 
 #capitais {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que os itens quebrem em várias linhas */
+    justify-content: space-between; /* Distribui uniformemente os itens */
     padding: 20px;
     background-color: #f9f9f9; /* Cor de fundo para destaque */
 }
@@ -177,26 +177,26 @@ div {
 .cidade {
     display: flex;
     align-items: center; /* Centraliza o texto verticalmente em relação à imagem */
-    flex: 1 1 25%; /* Tamanho flexível, ocupando 25% do espaço */
+    flex: 1 1 30%; /* Cada item ocupa cerca de 30% do espaço, permitindo 3 por linha */
     margin: 10px;
-    padding: 0px; /* Adiciona preenchimento */
+    padding: 0px; /* Adiciona preenchimento interno */
     background-color: #fff; /* Cor de fundo das seções */
     border: 1px solid #ccc; /* Borda das seções */
     border-radius: 20px; /* Bordas arredondadas */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
     box-sizing: border-box; /* Inclui bordas e preenchimento no cálculo de largura */
-    width: 35%;
+    
 }
 
 .cidade img {
     max-width: 133px; /* Tamanho máximo da imagem */
     max-height: 88px;
     border-radius: 5px; /* Bordas arredondadas da imagem */
-    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
 }
 
 .cidade h2, .cidade p {
-    margin: 0px;
+    margin: 0;
 }
 
 .cidade p {
