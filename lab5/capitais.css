@@ -142,12 +142,13 @@ div {
     color: white;
 }
 
-.img {
-    width: 85%; /* Define a largura da imagem como 85% */
-    height: auto; /* Mantém a proporção da imagem */
+.imagem {
+    width: 90%; /* Define a largura da imagem como 85% */
+    height: 90%; /* Mantém a proporção da imagem */
     display: block; /* Faz a imagem ocupar uma linha inteira */
-    margin: 0 auto; 
-    position: relative;
+    margin: 0 auto; /* Centraliza a imagem */
+    position: relative; /* Permite o posicionamento de elementos filhos, se necessário */
+    max-width: 100%; /* Garante que a imagem não exceda a largura do seu contêiner pai */
 }
 
 .autorfoto {
