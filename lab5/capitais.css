@@ -143,23 +143,25 @@ div {
 }
 
 .imagem {
-    width: 90%; /* Define a largura da imagem como 85% */
-    height: 90%; /* Mantém a proporção da imagem */
-    display: block; /* Faz a imagem ocupar uma linha inteira */
-    margin: 0 auto; /* Centraliza a imagem */
-    position: relative; /* Permite o posicionamento de elementos filhos, se necessário */
-    max-width: 100%; /* Garante que a imagem não exceda a largura do seu contêiner pai */
+    width: 100%; /* A imagem ocupa toda a largura do contêiner */
+    height: auto;  /* Garante que a imagem não exceda a largura do seu contêiner pai */
 }
 
 .autorfoto {
     position: absolute;
     bottom: 10px;
-    right: 10px;
+    right: 0px;
     color: black;
     background-color: rgb(0, 0, 0);
     padding: 5px;
 }
 
+.container{
+    position: relative; /* Define um contexto de posicionamento para o elemento filho */
+    width: 600px; /* Defina a largura do contêiner conforme necessário */
+    height: 300px; /* Defina a altura do contêiner conforme necessário */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse o contêiner */
+}
 
 
 
