@@ -162,7 +162,7 @@ div {
 
 .imagem {
     width: 100vw; /* A imagem ocupa toda a largura da viewport */
-    height: auto;  /* Garante que a imagem mantenha a proporção */
+    height: 50vh;  /* Garante que a imagem mantenha a proporção */
 }
 
 .autorfoto {
