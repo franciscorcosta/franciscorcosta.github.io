@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+
+    <title>Estocolmo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+</head>
+
+<body>
+    <h1>Estocolmo</h1>
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i>Home</a>
+        <a href="local.html"><i class="fas fa-map-marker-alt"></i>Localização</a>
+        <a href="multimedia.html"><i class="fas fa-image"></i>Multimédia</a>
+        <a href="info.html"><i class="fas fa-info-circle"></i>Informação</a>
+        <a href="quizz.html"><i class="fas fa-question-circle"></i>Quizz</a>
+        <a href="viagem.html"><i class="fas fa-plane"></i>Viagem</a>
+    </nav>
+
+    <img class="centered-image" src="images/istockphoto-178804395-612x612.jpg" alt="Vista de Estocolmo">
+
+
+
+    <main>
+        <h2>Quizz</h2>
+
+        <fieldset>
+            <legend><b>Dados Pessoais</legend></b>
+            <p></p>
+            <form action="form.html" method="get">
+                <input type="text" placeholder="Insira o nome" name="nome" required>
+
+                <p>
+                <form action="form.html" method="get">
+                    <input type="text" placeholder="Insira o apelido" name="apelido" required>
+
+
+                    </p>
+
+                    <p>
+                    <form action="form.html" method="get">
+                        <input type="text" placeholder="Insira o email" name="email" required>
+
+
+                        </p>
+                        <input type="submit">
+
+
+        </fieldset>
+        <br>
+        <p>
+
+        <fieldset>
+            <legend><b>Quizz sobre Estocolmo</legend></b>
+
+            <h4>1. Estocolmo tem um estilo de vida muito ligado à natureza. Como você personalizaria um passeio de
+                caiaque
+                pelas ilhas do arquipélago para torná-lo uma experiência única e divertida?</h4>
+            <input type="radio" id="Passeio com Paradas Gastronômicas Flutuantes" name="passeio" value="gastronomia">
+            <label for="Passeio com Paradas Gastronômicas Flutuantes"> Passeio com Paradas Gastronômicas
+                Flutuantes</label><br><br>
+
+            <input type="radio" id="Caiaque Noturno com Auroras Boreais Virtuais" name="passeio" value="aurora_boreal">
+            <label for="Caiaque Noturno com Auroras Boreais Virtuais"> Caiaque Noturno com Auroras Boreais
+                Virtuais</label><br><br>
+
+            <input type="radio" id="Corrida de Caiaques com Dragões Vikings" name="passeio" value="corrida_viking">
+            <label for="Corrida de Caiaques com Dragões Vikings"> Corrida de Caiaques com Dragões
+                Vikings</label><br><br>
+
+            <input type="radio" id="Tour de Caiaque com Parada para Mergulho Selvagem" name="passeio" value="mergulho">
+            <label for="Tour de Caiaque com Parada para Mergulho Selvagem">Tour de Caiaque com Parada para Mergulho
+                Selvagem</label><br><br>
+
+
+            <h4>2. Qual é o lugar mais surpreendente que você poderia encontrar andando pelas ruas de Södermalm, famoso
+                por sua cultura alternativa?</h4>
+
+            <input type="radio" id="Um Café Vintage com Móveis de Décadas Passadas" name="surpresa"
+                value="cafe_vintage">
+            <label for="Um Café Vintage com Móveis de Décadas Passadas"> Um Café Vintage com Móveis de Décadas
+                Passadas</label><br><br>
+
+            <input type="radio" id="Uma Livraria Oculta no Porão de um Prédio Antigo" name="surpresa"
+                value="livraria_oculta">
+            <label for="Uma Livraria Oculta no Porão de um Prédio Antigo"> Uma Livraria Oculta no Porão de um Prédio
+                Antigo</label><br><br>
+
+            <input type="radio" id="Um Estúdio de Arte Urbano em um Túnel Abandonado" name="surpresa"
+                value="estudio_arte">
+            <label for="Um Estúdio de Arte Urbano em um Túnel Abandonado"> Um Estúdio de Arte Urbano em um Túnel
+                Abandonado</label><br><br>
+
+            <input type="radio" id="Um Mercado de Rua com Produtos Feitos à Mão" name="surpresa" value="mercado_rue">
+            <label for="Um Mercado de Rua com Produtos Feitos à Mão"> Um Mercado de Rua com Produtos Feitos à
+                Mão</label><br><br>
+
+
+
+            <h4>3. Qual o seu grau de satisfação com a cidade? (0 - Não Satifeito ; 10 - Muito Satisfeito)</h4>
+            <label for="satisfacao">Satisfação (0 a 10):</label>
+            <input type="number" id="grau_de_satisfação" name="grau_de_satisfação" min="0" max="10">
+
+
+
+
+
+            <h4>4. Se você fosse um "Viking moderno" em Estocolmo, que tipo de aventura urbana você viveria e qual seria
+                o nome do seu navio?</h4>
+
+            <input type="radio" id="Aventura Gastronómica Viking - " Drakkar do Sabor"" name="aventura"
+                value="gastronomica">
+            <label for="Aventura Gastronómica Viking - " Drakkar do Sabor""> Aventura Gastronómica Viking - "Drakkar do
+                Sabor"</label><br><br>
+
+            <input type="radio" id="Expedição Cultural e Histórica - " Fjord da Cultura"" name="aventura"
+                value="cultural">
+            <label for="Expedição Cultural e Histórica - " Fjord da Cultura""> Expedição Cultural e Histórica - "Fjord
+                da Cultura"</label><br><br>
+
+            <input type="radio" id="Aventura Musical - " Coração de Viking" name="aventura" value="musical">
+            <label for="Aventura Musical - " Coração de Viking"> Aventura Musical - "Coração de Viking"</label><br><br>
+
+            <input type="radio" id="Exploração de Startups e Inovação - " Longship do Futuro"" name="aventura"
+                value="startups">
+            <label for="Exploração de Startups e Inovação - " Longship do Futuro""> Exploração de Startups e Inovação -
+                "Longship do Futuro"</label><br><br>
+
+            <input type="reset" value="Reset">
+
+            <form action="/seu-endereco-de-destino" method="post">
+
+
+                <input type="submit" value="Enviar">
+            </form>
+
+            <form method="get" action="https://postman-echo.com/get"></form>
+
+        </fieldset>
+        </form>
+        </p>
+    </main>
+
+
+
+</body>
+
+</html>

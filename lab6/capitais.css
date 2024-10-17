@@ -5,6 +5,8 @@
     /* medidas sao tomadas da borda */
 }
 
+
+
 header {
     position: sticky;
     font-family: 'Qwitcher Grypen', cursive;
@@ -131,7 +133,7 @@ div {
     /* Define um contexto de posicionamento para o elemento filho */
     width: 100%;
     /* Ocupa toda a largura disponível */
-    max-width: 110%;
+    max-width: 1200px;
     /* Limite a largura máxima */
     overflow: hidden;
     /* Esconde qualquer conteúdo que ultrapasse o contêiner */
@@ -142,9 +144,8 @@ div {
     /* A imagem ocupa toda a largura do contêiner */
     height: auto;
     /* Altura automática para manter a proporção */
-    max-height: 80vh;
+    max-height: 50vh;
     /* Altura máxima para limitar o tamanho */
-    height: 70vh;
     object-fit: cover;
     /* Ajusta a imagem para preencher o contêiner */
 }
@@ -169,53 +170,37 @@ div {
 
 #capitais {
     display: flex;
-    flex-wrap: wrap;
-    /* Permite que os itens quebrem em várias linhas */
-    justify-content: space-between;
-    /* Distribui uniformemente os itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem em várias linhas */
+    justify-content: space-between; /* Distribui uniformemente os itens */
     padding: 20px;
-    background-color: #f9f9f9;
-    /* Cor de fundo para destaque */
+    background-color: #f9f9f9; /* Cor de fundo para destaque */
 }
 
 .cidade {
     display: flex;
-    align-items: center;
-    /* Centraliza o texto verticalmente em relação à imagem */
-    flex: 1 1 30%;
-    /* Cada item ocupa cerca de 30% do espaço, permitindo 3 por linha */
+    align-items: center; /* Centraliza o texto verticalmente em relação à imagem */
+    flex: 1 1 30%; /* Cada item ocupa cerca de 30% do espaço, permitindo 3 por linha */
     margin: 10px;
-    padding: 0px;
-    /* Adiciona preenchimento interno */
-    background-color: #fff;
-    /* Cor de fundo das seções */
-    border: 1px solid #ccc;
-    /* Borda das seções */
-    border-radius: 20px;
-    /* Bordas arredondadas */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Sombra */
-    box-sizing: border-box;
-    /* Inclui bordas e preenchimento no cálculo de largura */
-
+    padding: 0px; /* Adiciona preenchimento interno */
+    background-color: #fff; /* Cor de fundo das seções */
+    border: 1px solid #ccc; /* Borda das seções */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    box-sizing: border-box; /* Inclui bordas e preenchimento no cálculo de largura */
+    
 }
 
 .cidade img {
-    max-width: 133px;
-    /* Tamanho máximo da imagem */
+    max-width: 133px; /* Tamanho máximo da imagem */
     max-height: 88px;
-    border-radius: 5px;
-    /* Bordas arredondadas da imagem */
-    margin-right: 20px;
-    /* Espaçamento entre a imagem e o texto */
+    border-radius: 5px; /* Bordas arredondadas da imagem */
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
 }
 
-.cidade h2,
-.cidade p {
+.cidade h2, .cidade p {
     margin: 0;
 }
 
 .cidade p {
-    margin-top: 5px;
-    /* Pequeno espaçamento entre o título e o parágrafo */
+    margin-top: 5px; /* Pequeno espaçamento entre o título e o parágrafo */
 }
