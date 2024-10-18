@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* medidas sao tomadas da borda */
+    /* Medidas são tomadas da borda */
 }
 
-
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
 
 header {
     position: sticky;
@@ -13,93 +16,53 @@ header {
     font-size: 2em;
     top: 0;
     background-color: #ffd900d5;
-    /* Cor de fundo */
     color: #0400ff;
-    /* Cor do texto */
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 nav a {
     padding: 10px;
-    /* Espaço ao redor de cada palavra */
     text-decoration: none;
-    /* Remove sublinhado */
     color: #313030;
-    /* Cor da fonte - você pode escolher outra cor */
 }
 
-/* Estilo para links não visitados */
 nav a:link {
     color: #007bff;
-    /* Cor do link não visitado */
 }
 
-/* Estilo para links visitados */
 nav a:visited {
     color: #0400ff;
-    /* Cor do link visitado */
 }
 
-/* Estilo para links ao passar o mouse */
 nav a:hover {
     color: #000000;
-    /* Cor ao passar o mouse */
     background-color: #f8f9fa;
-    /* Cor de fundo ao passar o mouse (opcional) */
 }
 
-/* Estilo para links ativos */
 nav a:active {
     color: #ff0000;
-    /* Cor do link ativo */
 }
-
-
 
 nav a:last-child {
     background-color: #0066ff;
-    /* Cor de fundo diferente para o último link */
     border-radius: 5px;
     color: white;
 }
 
-
-
-#poema {
+#poema, #paisagem {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 50vh;
-    /* Aumentar a altura para 100vh para ocupar toda a página */
     background-color: #003296;
-    /* Cor de fundo */
     margin: 0;
-    /* Remover margens externas */
     padding-bottom: 20px;
 }
-
-#paisagem {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 50vh;
-    /* Aumentar a altura para 100vh para ocupar toda a página */
-    background-color: #003296;
-    /* Cor de fundo */
-    margin: 0;
-    /* Remover margens externas */
-    padding-bottom: 20px;
-}
-
-
 
 div {
     text-align: center;
@@ -109,7 +72,6 @@ div {
 .poema {
     font-size: 1rem;
     margin: 0 20px;
-    /* Margens laterais */
     text-align: center;
     color: white;
 }
@@ -122,79 +84,50 @@ div {
 }
 
 .imagem {
-    width: auto;
-    /* A imagem ocupa toda a largura do contêiner */
-    height: auto;
-    /* Garante que a imagem não exceda a largura do seu contêiner pai */
-}
-
-.container {
-    position: relative;
-    /* Define um contexto de posicionamento para o elemento filho */
     width: 100%;
-    /* Ocupa toda a largura disponível */
-    max-width: 1200px;
-    /* Limite a largura máxima */
-    overflow: hidden;
-    /* Esconde qualquer conteúdo que ultrapasse o contêiner */
-}
-
-.imagem {
-    width: 100%;
-    /* A imagem ocupa toda a largura do contêiner */
     height: auto;
-    /* Altura automática para manter a proporção */
     max-height: 50vh;
-    /* Altura máxima para limitar o tamanho */
     object-fit: cover;
-    /* Ajusta a imagem para preencher o contêiner */
+    position: relative; /* Necessário para a posição absoluta da autorfoto */
 }
 
 .autorfoto {
     position: absolute;
-    /* Posiciona o nome do autor */
     bottom: 10px;
-    /* Distância do fundo */
-    right: 40px;
-    /* Distância da direita */
+    right: 10px;
     color: white;
-    /* Cor do texto */
     background-color: rgba(0, 0, 0, 0.5);
-    /* Fundo semi-transparente */
     padding: 5px;
-    /* Espaçamento interno */
     border-radius: 5px;
-    /* Bordas arredondadas */
 }
-
 
 #capitais {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem em várias linhas */
-    justify-content: space-between; /* Distribui uniformemente os itens */
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 20px;
-    background-color: #f9f9f9; /* Cor de fundo para destaque */
+    background-color: #f9f9f9;
 }
 
 .cidade {
     display: flex;
-    align-items: center; /* Centraliza o texto verticalmente em relação à imagem */
-    flex: 1 1 30%; /* Cada item ocupa cerca de 30% do espaço, permitindo 3 por linha */
+    align-items: center;
+    flex: 1 1 30%;
     margin: 10px;
-    padding: 0px; /* Adiciona preenchimento interno */
-    background-color: #fff; /* Cor de fundo das seções */
-    border: 1px solid #ccc; /* Borda das seções */
-    border-radius: 20px; /* Bordas arredondadas */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
-    box-sizing: border-box; /* Inclui bordas e preenchimento no cálculo de largura */
-    
+    padding: 0px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 .cidade img {
-    max-width: 133px; /* Tamanho máximo da imagem */
+    max-width: 133px;
     max-height: 88px;
-    border-radius: 5px; /* Bordas arredondadas da imagem */
-    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+    border-radius: 5px;
+    margin-right: 20px;
+    object-fit: cover;
 }
 
 .cidade h2, .cidade p {
@@ -202,5 +135,5 @@ div {
 }
 
 .cidade p {
-    margin-top: 5px; /* Pequeno espaçamento entre o título e o parágrafo */
+    margin-top: 5px;
 }
