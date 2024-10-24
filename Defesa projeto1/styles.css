@@ -1,0 +1,31 @@
+header {
+    background-color: lightgrey;
+    text-align: center;
+    border-radius: 0px;
+    position: sticky;
+}
+
+footer {
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+#introducao, #laboratorios, #interfaces {
+    border: 2px solid;
+    /* Define as linhas ao redor da seção */
+    border-radius: 10px;
+    /* Define as linhas ao redor da seção */
+    padding: 20px 5px;
+    /* Espaço interno da seção */
+    margin: 50px 0px 50px ;
+    /* Espaço externo da seção: cria distância do cabeçalho */
+    padding-top: 0px;
+    padding-right: -5px;
+  }
+
+
+
+  
