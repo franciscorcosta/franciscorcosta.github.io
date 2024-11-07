@@ -23,11 +23,11 @@
 
 
     <ol>
-        <li onmouseover="this.textContent = 'Obrigado por passares!'" onmouseout="this.textContent = 'Passa por aqui!'">
+        <li id="mensagem">
             Passa por aqui!
         </li>
 
-        <li>Pinta-me!
+        <li id="texto">Pinta-me!
 
             <button id="vermelho">Red</button>
             <button id="verde">Green</button>
@@ -39,7 +39,7 @@
 
         <li>Experimenta escrever...
 
-            <input type="text" name="texto">
+            <input type="text" id="textInput" class="input-box" oninput="mudacorCaixaTexto()">
 
 
         </li>
@@ -52,15 +52,8 @@
 
 
         <li>
-
             <button id="conta">Conta!</button>
             <span id="contador">0</span>
-
-
-
-
-
-
         </li>
 
 
