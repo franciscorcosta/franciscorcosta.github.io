@@ -29,9 +29,9 @@
 
         <li>Pinta-me!
 
-            <button>Red</button>
-            <button>Green</button>
-            <button>Blue</button>
+            <button id="vermelho">Red</button>
+            <button id="verde">Green</button>
+            <button id="azul">Blue</button>
 
 
 
@@ -39,24 +39,31 @@
 
         <li>Experimenta escrever...
 
-            <input type="text" placeholder="" name="texto">
-            <input type="submit" value="submeter">
+            <input type="text" name="texto">
+
 
         </li>
 
         <li>Escolha uma cor em inglês:
 
-            <input type="text" placeholder="" name="texto">
-
+            <input type="text" name="texto">
+            <input type="submit" value="submeter">
         </li>
+
 
         <li>
-            <button>Conta!</button>
+
+            <button id="conta">Conta!</button>
+            <span id="contador">0</span>
+
+
 
 
 
 
         </li>
+
+
     </ol>
 
 
@@ -65,20 +72,11 @@
 
 
 
-    <script src="scripts/main.js"></script>
 
-
+    <script src="main.js"></script>
 </body>
 
-<script>
-    let counter = 0;
 
-    function count() {
-        const heading = document.querySelector('h1');
-        counter++;
-        heading.textContent = counter;
-    } 
-</script>
 
 
 
