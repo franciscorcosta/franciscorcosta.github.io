@@ -53,7 +53,10 @@ function mudacorCaixaTexto() {
 
 
 // Ao escrever uma cor em inglês seguindo de clinar no submeter muda a cor de fundo da página
-
+function MudarCorBackground() {
+    const color = document.getElementById('colorInput').value.toLowerCase();
+    document.body.style.backgroundColor = color;
+  }
 
 
 
