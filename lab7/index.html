@@ -9,7 +9,7 @@
 
 <body>
 
-    <a href="/lab7/eventos.html">Eventos</a>
+    <a href="/lab7/eventos.html" class="link-eventos">Eventos</a>
 
 
 
@@ -22,6 +22,35 @@
 
         body {
             background-color: LightSteelBlue;
+        }
+
+        .link-eventos {
+            color: #333;
+            /* Cor do texto inicial */
+            text-decoration: none;
+            /* Remove o sublinhado */
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border: 2px solid #333;
+            /* Borda ao redor do link */
+            border-radius: 5px;
+            transition: 0.3s;
+            /* Suaviza a transição */
+        }
+
+        /* Efeito de hover */
+        .link-eventos:hover {
+            background-color: #ff9800;
+            /* Cor de fundo no hover */
+            color: #fff;
+            /* Cor do texto no hover */
+            border-color: #ff9800;
+            /* Altera a cor da borda no hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            /* Sombra ao passar o mouse */
+            transform: translateY(-2px);
+            /* Leve movimento para cima no hover */
         }
     </style>
 

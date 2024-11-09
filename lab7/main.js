@@ -56,13 +56,7 @@ function mudacorCaixaTexto() {
 function MudarCorBackground() {
     const color = document.getElementById('colorInput').value.toLowerCase();
     document.body.style.backgroundColor = color;
-  }
-
-
-
-
-
-
+}
 
 
 
@@ -76,3 +70,8 @@ function contar() {
 
 // Passa a função contar no onclick
 document.querySelector('#conta').onclick = contar;
+
+
+
+
+
