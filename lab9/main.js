@@ -13,11 +13,7 @@ function carregarProdutos(produtos) {
 
         const article = criarProduto(produto);
         document.querySelector('#listaprodutos').append(article);
-        
 
-       const imagem = criarProduto(produto)
-       document.querySelector('#listaprodutos').append(imagem)
- 
 
 
     });
@@ -35,15 +31,23 @@ function criarProduto(produto) {
     titulo.textContent = produto.title
     article.append(titulo)
 
-    //  Cria a imagem do produto mas está a aparecer em duplicado (Resover depois)
+    //  Cria a imagem do produto
     const imagem = document.createElement('img')
     imagem.src = produto.image
     imagem.alt = produto.title; //Usando o título como texto alternativo para a imagem
     article.append(imagem)
 
+    // Cria o preço do produto
+    const preco = document.createElement('h4')
+    preco.textContent = 'Custo total: ' + produto.price + '€'
+    article.append(preco)
+
+
 
     // Cria a descrição do produto
-    
+    const descricao = document.createElement('p');
+    descricao.textContent = produto.description; // Assume que 'descricao' é um campo no produto
+    article.appendChild(descricao)
 
 
 

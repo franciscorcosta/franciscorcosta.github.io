@@ -47,7 +47,7 @@ main {
 section,
 aside {
     padding: 15px;
-    border: 1px solid #ddd;
+    border: 1px #ddd;
     border-radius: 8px;
     flex: 1;
 }
@@ -61,3 +61,88 @@ footer {
     /* Pode ser ajustado ou removido */
 }
 
+/*Lista dos produtos*/
+section #listaprodutos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: white;
+}
+
+
+/* Estilo para o artigo */
+article {
+    width: 265px;
+    /* Largura do cartão */
+    margin: 20px auto;
+    /* Centraliza na página */
+    padding: 50px;
+    background-color: #FFFFFF;
+    /* Fundo branco */
+    border: 1px solid #ddd;
+    /* Borda cinza clara */
+    border-radius: 4px;
+    /* Cantos levemente arredondados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    text-align: center;
+    /* Centraliza o texto */
+    font-family: Arial, sans-serif;
+    /* Fonte padrão */
+}
+
+/* Descrição dos produtos */
+section p {
+    color: #000000;
+    /* Cor do texto */
+    margin-bottom: 25px;
+    /* Espaçamento inferior */
+    margin-left: -20px;
+    /* Move para a esquerda */
+    text-align: left;
+    /* Alinha o texto à esquerda */
+    background-color: #D3D3D3;
+    /* Fundo claro para destaque */
+    padding: 10px;
+    /* Espaçamento interno */
+    border: #778899;
+    /* Borda cinza */
+    border-radius: 0px;
+    /* Cantos quadrados */
+    width: 22vh;
+    /* Largura fixa */
+    height: 35vh;
+    /* Altura fixa */
+    overflow: hidden;
+    /* Oculta texto excedente */
+}
+
+
+/* Imagens */
+section img {
+    width: 10vh;
+    /* Tamanho proporcional à altura da viewport */
+    margin: 10px;
+    /* Espaçamento acima e abaixo */
+
+}
+
+/* Preço */
+section h4 {
+    font-size: 16px;
+    /* Tamanho maior */
+    font-weight: bold;
+    /* Negrito */
+    color: #000000;
+    /* Cor do texto */
+    margin: 10px 0;
+    /* Espaçamento ao redor */
+}
+
+/* Título dos produtos */
+section h2 {
+    font-size: large;
+    margin-top: -20px;
+    height: 11vh;
+    /* Espaçamento superior e inferior */
+}
