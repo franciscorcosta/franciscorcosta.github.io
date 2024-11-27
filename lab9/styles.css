@@ -70,8 +70,6 @@ footer {
 
 h2 {
     text-align: center;
-
-
 }
 
 
@@ -103,7 +101,7 @@ article {
 }
 
 /* Descrição dos produtos */
-section p {
+section p { 
     color: #000000;
     margin-bottom: 1.2vh;
     text-align: left;
@@ -111,10 +109,10 @@ section p {
     padding: 1vh;
     border: 1px #778899;
     border-radius: 4px;
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;
+    font-size: 0.9em;
+    overflow: hidden; /* Ajuste o valor conforme necessário */
 }
 
 /* Imagens */

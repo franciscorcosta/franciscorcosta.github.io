@@ -1,10 +1,13 @@
+// Verifica se a chave 'produtos-selecionados' existe no localStorage. Se não, cria uma lista vazia.
+if (!localStorage.getItem('produtos-selecionados')) {
+    localStorage.setItem('produtos-selecionados', JSON.stringify([]));
+}
+
+
 document.addEventListener('DOMContentLoaded', function () {
     // Aqui você chama a função carregarProdutos e passa a variável produtos como argumento
     carregarProdutos(produtos);
 });
-
-
-
 
 
 
@@ -52,15 +55,27 @@ function criarProduto(produto) {
     // Cria o botão
     const botao = document.createElement('button');
     botao.textContent = '+ Adicionar ao Cesto';
- 
     article.append(botao);
 
+    //Evento quando o botão for clicado
+    botao.addEventListener('click', () => {
+        const produtosSelecionados = JSON.parse(localStorage.getItem('produtos-selecionados')) || [];
+        // Adiciona o produto atual
+        produtosSelecionados.push({ titulo, preco });
 
-
+        // Atualiza o localStorage
+        localStorage.setItem('produtos-selecionados', JSON.stringify(produtosSelecionados));
+    });
 
 
     return article;
 }
+
+
+
+
+
+
 
 
 
