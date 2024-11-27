@@ -24,6 +24,9 @@ function carregarProdutos(produtos) {
 
 
 
+
+
+
 function criarProduto(produto) {
 
 
@@ -54,23 +57,43 @@ function criarProduto(produto) {
 
     // Cria o botão
     const botao = document.createElement('button');
-    botao.textContent = '+ Adicionar ao Cesto';
-    article.append(botao);
+    botao.textContent = '+ Adicionar ao Cesto'
+    article.append(botao)
 
     //Evento quando o botão for clicado
     botao.addEventListener('click', () => {
-        const produtosSelecionados = JSON.parse(localStorage.getItem('produtos-selecionados')) || [];
+        const produtosSelecionados = JSON.parse(localStorage.getItem('produtos-selecionados')) || []
         // Adiciona o produto atual
-        produtosSelecionados.push({ titulo, preco });
-
-        // Atualiza o localStorage
-        localStorage.setItem('produtos-selecionados', JSON.stringify(produtosSelecionados));
-    });
-
+        produtosSelecionados.push({ titulo, preco })
+        // Atualiza o localStorage com o produto selecionado
+        localStorage.setItem('produtos-selecionados', JSON.stringify(produtosSelecionados))
+    })
 
     return article;
 }
 
+
+
+function criaProdutoCesto(produto) {
+    const produtosSelecionados = JSON.parse(localStorage.getItem('produtos-selecionados')) || []
+
+    const article = document.createElement('article')
+
+
+}
+
+
+function atualizaCesto() {
+    const produtosSelecionados = JSON.parse(localStorage.getItem('produtos-selecionados')) || [];
+
+    const inserirProdutoCesto = document.getElementById('produtos-selecionados')
+
+    inserirProdutoCesto.innerHTML = '';
+
+    
+    
+
+}
 
 
 
