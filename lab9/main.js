@@ -49,7 +49,11 @@ function criarProduto(produto) {
     descricao.textContent = produto.description; // Assume que 'descricao' é um campo no produto
     article.appendChild(descricao)
 
-
+    // Cria o botão
+    const botao = document.createElement('button');
+    botao.textContent = '+ Adicionar ao Cesto';
+ 
+    article.append(botao);
 
 
 
