@@ -4,10 +4,6 @@ if (!localStorage.getItem('produtos-selecionados')) {
 }
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    // Aqui você chama a função carregarProdutos e passa a variável produtos como argumento
-    carregarProdutos(produtos);
-});
 
 
 
@@ -60,14 +56,7 @@ function criarProduto(produto) {
     botao.textContent = '+ Adicionar ao Cesto'
     article.append(botao)
 
-    //Evento quando o botão for clicado
-    botao.addEventListener('click', () => {
-        const produtosSelecionados = JSON.parse(localStorage.getItem('produtos-selecionados')) || []
-        // Adiciona o produto atual
-        produtosSelecionados.push(produto)
-        // Atualiza o localStorage com o produto selecionado
-        localStorage.setItem('produtos-selecionados', JSON.stringify(produtosSelecionados))
-    })
+  
 
     return article;
 }
