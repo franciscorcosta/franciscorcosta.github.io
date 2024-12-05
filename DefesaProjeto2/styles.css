@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #778899;
+    color: white;
+    padding: 1rem 2rem;
+    /* Usando unidades relativas */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    /* Espaço entre os textos */
+}
+
+main {
+    display: flex;
+    gap: 2rem;
+    /* Unidade relativa */
+    padding: 2rem;
+    /* Unidade relativa */
+}
+
+section,
+aside {
+    padding: 1rem;
+    /* Unidade relativa */
+    border: 1px #ddd;
+    border-radius: 0.5rem;
+    /* Unidade relativa */
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    background-color: mediumblue;
+    color: white;
+    padding: 1rem 2rem;
+    /* Usando unidades relativas */
+    margin-top: 2rem;
+    /* Unidade relativa */
+}
+
+h2 {
+    text-align: center;
+}
+
+
+
+
+/*Lista dos produtos*/
+section #listaprodutos {
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    gap: 10px;
+    /* Menor espaço entre os itens */
+    background-color: white;
+}
+
+/* Estilo para o artigo */
+article {
+    width: 30vw;
+    max-width: 600px;
+    /* Limita a largura máxima */
+    margin: 1vh auto 0;
+    /* Centraliza e adiciona espaçamento superior/inferior */
+    padding: 2vh;
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Descrição dos produtos */
+section p {
+    color: #000000;
+    margin-bottom: 1.2vh;
+    text-align: left;
+    background-color: #D3D3D3;
+    padding: 1vh;
+    border: 1px #778899;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9em;
+    overflow: hidden;
+    /* Ajuste o valor conforme necessário */
+}
+
+/* Imagens */
+section img {
+    width: 10vw;
+    max-width: 75px;
+    display: block;
+    /* Torna a imagem um bloco para centralizar */
+    margin: -1.2vh auto 0;
+    /* Adiciona margem superior de 1vh e centraliza horizontalmente */
+}
+
+/* Título dos produtos */
+section h2 {
+    font-size: large;
+    margin-top: 0vh;
+    /* Ajusta o espaçamento superior em relação à altura da tela */
+    height: 5.5vh;
+    /* A altura é ajustada para ser proporcional */
+    text-align: center;
+    /* Garante que o título ficará centralizado */
+}
+
+/* Preço */
+section h4 {
+    font-size: large;
+    font-weight: bold;
+    color: #000000;
+    margin: 2vh 0;
+    /* Espaçamento proporcional ao layout */
+}
